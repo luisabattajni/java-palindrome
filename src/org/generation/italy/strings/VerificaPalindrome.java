@@ -5,20 +5,7 @@ import java.util.Scanner;
 public class VerificaPalindrome {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		/*
-		 * * chiedere all’utente di inserire una parola
-		 * verificare se è palindroma
-		 * stampare in console la lunghezza della parola e se è palindroma oppure no
-		 * 
-		 * so
-		 * scanner input
-		 * reverse
-		 * is A = reverseA
-		 * print: length + yay/nay p
-		 */
-		
+	
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Verificatore di vocaboli palindromi");
 		System.out.println("Iserisci la parola che vuoi controllare: ");
@@ -30,14 +17,10 @@ public class VerificaPalindrome {
 		
 		for (int i = 0; i < yourWord.length(); i++) {
 			c = yourWord.charAt(i);
-			//System.out.print(c);
 		}
-		
-		System.out.println();
-		
+			
 		for (int i = yourWord.length()-1; i >= 0; i--) {
 			c = yourWord.charAt(i);
-			//System.out.print(c);
 			
 			reverseWord = reverseWord + c;
 			
@@ -46,15 +29,11 @@ public class VerificaPalindrome {
 			} else {
 				output = "Questa parola non è palindroma.";
 			}
-			
 		}
 		
-
-		System.out.print(output + " Questa parola contiene " + yourWord.length() + " caratteri.");
-		
+		System.out.print("Questa parola contiene " + yourWord.length() + " caratteri. " + output);
 		
 		scan.close();
-
 	}
 
 }
