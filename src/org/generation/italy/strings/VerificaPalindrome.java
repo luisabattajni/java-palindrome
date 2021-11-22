@@ -30,28 +30,27 @@ public class VerificaPalindrome {
 		
 		for (int i = 0; i < yourWord.length(); i++) {
 			c = yourWord.charAt(i);
-			System.out.print(c);
+			//System.out.print(c);
 		}
 		
 		System.out.println();
 		
 		for (int i = yourWord.length()-1; i >= 0; i--) {
 			c = yourWord.charAt(i);
-			System.out.print(c);
+			//System.out.print(c);
 			
 			reverseWord = reverseWord + c;
 			
 			if (yourWord.equals(reverseWord)) {
-				output = "Questa parola è palindroma";
+				output = "Questa parola è palindroma.";
 			} else {
-				output = "Questa parola non è palindroma";
+				output = "Questa parola non è palindroma.";
 			}
 			
 		}
 		
 
-		System.out.println();
-		System.out.print(output);
+		System.out.print(output + " Questa parola contiene " + yourWord.length() + " caratteri.");
 		
 		
 		scan.close();
