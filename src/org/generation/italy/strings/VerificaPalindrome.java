@@ -15,10 +15,6 @@ public class VerificaPalindrome {
 		
 		char c;
 		
-		for (int i = 0; i < yourWord.length(); i++) {
-			c = yourWord.charAt(i);
-		}
-			
 		for (int i = yourWord.length()-1; i >= 0; i--) {
 			c = yourWord.charAt(i);
 			
